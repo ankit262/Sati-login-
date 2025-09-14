@@ -1,0 +1,280 @@
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- BODY WITH GRADIENT BACKGROUND ---------- */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #004d40, #26a69a, #a7ffeb);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.header .logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  border: 2px solid #00ffb3;
+  padding: 5px;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #e0f7fa;
+}
+
+/* ---------- FORM CONTAINER ---------- */
+.container {
+  position: relative;
+  z-index: 2;
+  width: 360px;
+  max-width: 90%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  overflow: hidden;
+  padding: 40px 30px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* ---------- FORM BOX ---------- */
+.form-box {
+  display: none;
+  color: #fff;
+}
+
+.form-box.active {
+  display: block;
+  animation: fadeInScale 0.7s ease forwards;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ---------- HEADINGS ---------- */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #00ffb3;
+}
+
+/* ---------- INPUT BOX ---------- */
+.input-box {
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 14px 10px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid rgba(255,255,255,0.8);
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border-bottom-color: #00ffb3;
+}
+
+.input-box label {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  color: rgba(255,255,255,0.8);
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -12px;
+  font-size: 13px;
+  color: #00ffb3;
+}
+
+/* ---------- BUTTON ---------- */
+.btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #00ffb3, #009688);
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  transition: transform 0.3s ease, background 0.4s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #00e69b, #00796b);
+}
+
+/* ---------- SWITCH LINK ---------- */
+.switch {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.switch a {
+  color: #00ffb3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 450px) {
+  .header .logo {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  .header h1 {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+￼Enter------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- BODY WITH GRADIENT BACKGROUND ---------- */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #004d40, #26a69a, #a7ffeb);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.header .logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  border: 2px solid #00ffb3;
+  padding: 5px;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #e0f7fa;
+}
+
+/* ---------- FORM CONTAINER ---------- */
+.container {
+  position: relative;
+  z-index: 2;
+  width: 360px;
+  max-width: 90%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  overflow: hidden;
+  padding: 40px 30px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* ---------- FORM BOX ---------- */
+.form-box {
+  display: none;
+  color: #fff;
+}
+
+.form-box.active {
+  display: block;
+  animation: fadeInScale 0.7s ease forwards;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ---------- HEADINGS ---------- */
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
